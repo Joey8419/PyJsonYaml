@@ -8,7 +8,7 @@ def converter(file1):
         yaml.dump(new_file1, yaml_file)
 
     with open(file1, 'r') as yaml_file:
-        print(yaml_file.read())
+        return yaml_file.read()
 
 converter("donuts.json")
 converter("emojis.json")
